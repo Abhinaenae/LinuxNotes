@@ -1,1 +1,7 @@
-
+abhi developer devops 120000
+james manager devops 180000
+ashlin manager security 200000
+lebron director devops 340000
+tarun developer security 150000
+deepak analyst security 80000
+lily analyst devops 70000
