@@ -20,7 +20,7 @@ awk options 'selection _criteria {action }' input-file > output-file
 
 ### Examples:
 Here, the example log file I will be using is "employees.txt":
-`
+```
   abhi developer devops 120000
   james manager devops 180000
   ashlin manager security 200000
@@ -29,21 +29,23 @@ Here, the example log file I will be using is "employees.txt":
   deepak analyst security 80000
   lily analyst devops 70000
   satvik director marketing 800000
-`
+```
 #### Example 1:
 The default behavior of awk is printing every line of data from the file.
 With the command:
  ` $ awk '{print}' employee.txt`
 
 we will get this as the output:
-` abhi developer devops 120000
+```
+  abhi developer devops 120000
   james manager devops 180000
   ashlin manager security 200000
   lebron director devops 340000
   tarun developer security 150000
   deepak analyst security 80000
   lily analyst devops 70000
-  satvik director marketing 800000 `
+  satvik director marketing 800000
+ ```
 
 #### Example 2:
 Another example where we input:
@@ -51,8 +53,10 @@ Another example where we input:
 will print the lines where "developer" matches in.
 
 the output is:
-  `abhi developer devops 120000
-  tarun developer security 150000`
+  ```
+  abhi developer devops 120000
+  tarun developer security 150000
+```
 
 
 END(for now)
