@@ -16,7 +16,7 @@ Awk is a scripting language used for manipulating data and generating reports. T
   2. Produce formatted reports
 
 ### Structure of the awk command?
-awk options 'selection _criteria {action }' input-file > output-file
+`awk options 'selection _criteria {action }' input-file > output-file`
 
 ### Examples:
 Here, the example log file I will be using is "employees.txt":
