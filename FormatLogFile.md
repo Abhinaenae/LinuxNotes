@@ -18,6 +18,16 @@ Awk is a scripting language used for manipulating data and generating reports. T
 ### Structure of the awk command?
 `awk options 'selection _criteria {action }' input-file > output-file`
 
+### Built-in variables in awk:
+- Awk’s built-in variables include the field variables—$1, $2, $3, and so on ($0 is the entire line) — they break a line of text into individual fields. 
+
+- NR: NR command keeps a current count of the number of input records.
+- NF: NF command keeps a count of the number of fields within the current input record.
+- FS: FS command contains the field separator character which is used to divide fields on the input line. The default is a “white space”, which is space and tab characters.
+- RS: RS command stores the current record separator character. The default record separator character is a newline. 
+- OFS: OFS command stores the output field separator, which separates the fields when Awk prints them. The default is a blank space.
+- ORS: ORS command stores the output record separator, which separates the output lines when Awk prints them. The default is a newline character. print automatically outputs the contents of ORS at the end of whatever it is given to print.
+
 ### Examples:
 Here, the example log file I will be using is "employees.txt":
 ```
@@ -68,6 +78,9 @@ output:
 7 lily analyst devops 70000
 8 satvik director marketing 800000
 ```
+
+#### Example 4:
+
 
 END(for now)
 
