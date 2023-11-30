@@ -58,6 +58,16 @@ the output is:
   tarun developer security 150000
 ```
 
+#### Example 3:
+`awk 'NR==5, NR==8 {print NR,$0}' employee.txt` will print lines 5-8 with a line number.
+
+output:
+```
+5 tarun developer security 150000
+6 deepak analyst security 80000
+7 lily analyst devops 70000
+8 satvik director marketing 800000
+```
 
 END(for now)
 
